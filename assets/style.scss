@@ -1,0 +1,264 @@
+$bodyBackgroundColor: #000612;
+$bodyAccentColor: #256eff;
+
+.intro-text {
+    margin: 0;
+    position: relative;
+}
+
+.intro-background-title {
+    font-size: 64px;
+    line-height: 90%;
+    color: rgba(255, 255, 255, 0);
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.15);
+}
+
+.intro-title {
+    font-size: 42px;
+    font-weight: 600;
+    color: #fff;
+    bottom: 30px;
+    margin-bottom: -30px;
+}
+
+.intro-separator {
+    font-size: 78px;
+    color: $bodyAccentColor;
+    bottom: 15px;
+    margin-bottom: -30px;
+}
+
+.intro-description {
+    max-width: 550px;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.intro-buttons-container {
+    margin: 37.5px auto;
+}
+
+#details-button {
+    margin-right: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 25px;
+    padding: 12.5px 17.5px;
+    
+    &:hover {
+        color: rgba(255, 255, 255, 0.85);
+    }
+}
+
+.layer-image {
+    position: absolute;
+}
+
+#macbook-img {
+    width: 80%;
+    top: 0px;
+    left: 0px;
+}
+
+#xcode-img {
+    width: 50%;
+    top: 0px;
+    left: -60px;
+}
+
+#terminal-img {
+    width: 60%;
+    bottom: 0px;
+    right: 0px;
+}
+
+#container-2 {
+    padding-top: 25vh;
+    padding-bottom: 30vh;
+    grid-template-columns: 4fr 6fr;
+    column-gap: 15px;
+    row-gap: 15px;
+}
+
+#container-2 .section {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+#container-2 .sectionContent {
+    padding: 30px;
+    margin: 0;
+}
+
+#frontend-section:hover {
+    transition: 0.15s;
+    background: rgba(#01050C, 0.25);
+    border-color: rgba(0, 0, 0, 0);
+    
+    #ellipse-blue-image {
+        transition: 0.15s;
+        opacity: 0.1;
+    }
+}
+
+#backend-section:hover {
+    transition: 0.25s;
+    background: rgba(#01050C, 0.25);
+    border-color: rgba(0, 0, 0, 0);
+
+    #ellipse-red-image {
+        transition: 0.25s;
+        opacity: 0.1;
+    }
+}
+
+.direction-description {
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 400;
+}
+
+#ellipse-blue-image {
+    width: 310px;
+    position: absolute;
+    top: -10.5vh;
+    left: -5vw;
+    z-index: -1;
+}
+
+#ellipse-red-image {
+    width: 310px;
+    position: absolute;
+    bottom: -22.5vh;
+    right: -6vw;
+    z-index: -1;
+}
+
+#container-3 {
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    background: #fff;
+}
+
+#applications-image {
+    position: absolute;
+    top: 30.5vh;
+    right: 0px;
+}
+
+.applications-title {
+    color: #000;
+}
+
+.applications-description {
+    color:rgba(0, 0, 0, 0.85);
+}
+
+#container-4 {
+    margin: 15vh auto;
+    row-gap: 5vh;
+}
+
+.languages-container {
+    display: grid;
+    min-width: 550px;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+}
+
+.language-item {
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.language-content {
+    text-align: center;
+    padding: 10px 20px;
+    transition: 0.15s;
+    
+    &:hover {
+        transition: 0.15s;
+        background: rgba(255, 255, 255, 0.025);
+        border-radius: 10px;
+    }
+
+    &:hover img {
+        transform: translateY(-15px);
+        transition: 0.15s;
+    }
+}
+
+.language-title {
+    font-weight: 400;
+    margin: 0px;
+}
+
+#container-5 {
+    background: rgba(#01050C, 0.25);
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
+#container-5 .sectionContent {
+    text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+    
+    #ellipse-blue-image {
+        top: 2.5vh;
+    }
+
+    #ellipse-red-image {
+        bottom: -33.5vh;
+    }
+
+    .languages-container {
+        width: 65vw;
+    }
+}
+
+@media screen and (max-width: 680px) {
+
+    .intro-background-title {
+        font-size: 38px;
+        -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.15);
+    }
+
+    .intro-title {
+        font-size: 28px;
+        bottom: -10px;
+        margin-bottom: 10px;
+    }
+
+    .intro-separator {
+        font-size: 64px;
+    }
+
+    .intro-description {
+        font-size: 14px;
+    }
+
+    #container-2 {
+        grid-template-columns: inherit;
+    }
+
+    #ellipse-blue-image {
+        top: -4.5vh;
+    }
+
+    #applications-image {
+        top: 45vh;
+    }
+
+    .language-title {
+        font-size: 14px;
+    }
+
+    #container-4 .sectionLeft {
+        margin-bottom: 65px;
+    }
+
+    .languages-container {
+        min-width: 280px;
+    }
+}

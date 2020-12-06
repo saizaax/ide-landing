@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="shortcut icon" href="assets/ico/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/common.css"/>
+    <link rel="stylesheet" href="assets/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar" id="_navbar">
+        <a class="navlink" href="#container-1" onclick="responsiveNavbar()">Главная<p class="underline">~</p></a>
+        <a class="navlink" href="#container-2" onclick="responsiveNavbar()">Направления<p class="underline">~</p></a>
+        <a class="navlink" href="#container-3" onclick="responsiveNavbar()">Средства<p class="underline">~</p></a>
+        <a class="navlink" href="#container-4" onclick="responsiveNavbar()">Языки<p class="underline">~</p></a>
+        <a class="navlink" href="./search.html">Поиск<p class="underline">~</p></a>
+        <a href="javascript:void(0);" class="icon" onclick="responsiveNavbar()"><i class="fa fa-bars" id="navIcon"></i></a>
+    </div>
+    <div id="content-fraction">
+        <div class="container" id="container-1">
+            <div class="section sectionLeft" data-aos="fade-up" data-aos-duration="900">
+                <div class="sectionContent">
+                    <h2 class="intro-text intro-background-title parallax">DEV<br>SOFTWARE</h2>
+                    <p class="intro-text intro-title">Узнайте больше об инструментах разработчиков</p>
+                    <h1 class="intro-text intro-separator">~</h1>
+                    <p class="intro-text intro-description">Получите более детальное описание и характеристики совеременных приложений для разработки.</p>
+                    <div class="intro-buttons-container">
+                        <a id="details-button" href="#container-2">Подробнее</a>
+                        <a class="arrow-button" href="./search.html">Поиск <i class="fas fa-arrow-right arrow-button-icon"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="section sectionRight" data-aos="fade-down" data-aos-duration="900">
+                <div class="sectionContent">
+                    <img src="assets/img/intro-blob.png" class="section-image" id="intro-blob-img">
+                    <img src="assets/img/macbook.png" class="section-image layer-image parallax" id="macbook-img">
+                    <img src="assets/img/terminal.png" class="section-image layer-image parallax" id="terminal-img">
+                    <img src="assets/img/xcode.png" class="section-image layer-image parallax" id="xcode-img">
+                </div>
+            </div>
+        </div>
+        <div class="container" id="container-2">
+            <div class="section sectionLeft" id="frontend-section" data-aos="fade-up" data-aos-duration="900">
+                <div class="sectionContent">
+                    <img src="assets/img/ellipse-blue.png" class="parallax" id="ellipse-blue-image">
+                    <h1 class="direction-title">Web<br>Разработка</h1>
+                    <p class="direction-description">Выберите из каталога приложений лучшее решение для создания пользовательских интерфейсов и работы с современными фреймворками на базе HTML, CSS, JavaScript, а также с масштабными базами данных.</p>
+                    <a class="arrow-button" href="#container-3">Узнать больше <i class="fas fa-arrow-right arrow-button-icon"></i></a>
+                </div>
+            </div>
+            <div class="section sectionRight" id="backend-section" data-aos="fade-down" data-aos-duration="900">
+                <div class="sectionContent">
+                    <img src="assets/img/ellipse-red.png" class="parallax" id="ellipse-red-image">
+                    <h1 class="direction-title">Mobile & GameDev<br>Разработка</h1>
+                    <p class="direction-description">Найдите подходящую интегрированную среду разработки для написания кода игровых механик, сервисов, комплексных мобильных приложений на базе Java, Kotlin, C#, C/С++, Swift, Go, или Ruby, с использованием многочисленных библиотек и фреймворков.</p>
+                    <a class="arrow-button" href="#container-3">Узнать больше <i class="fas fa-arrow-right arrow-button-icon"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="container-3">
+            <div class="section sectionLeft" data-aos="fade-up" data-aos-duration="900">
+                <div class="sectionContent">
+                    <img src="assets/img/application-blob.png" class="section-image" id="applications-blob-image">
+                    <img src="assets/img/applications.png" class="section-image parallax" id="applications-image" data-rellax-percentage="-2">
+                </div>
+            </div>
+            <div class="section sectionRight" data-aos="fade-down" data-aos-duration="900">
+                <div class="sectionContent">
+                    <h1 class="applications-title">Найдите удобный интструмент для себя</h1>
+                    <p class="applications-description">Среди представленных программ можно найти как бесплатные open-source проекты, так и платные профессиональные инструменты от именитых разработчиков - Apple, Microsoft, JetBrains.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="container-4">
+            <div class="section sectionLeft" data-aos="fade-down" data-aos-duration="900">
+                <div class="sectionContent">
+                    <h1 class="direction-title">Подберите приложение по языку</h1>
+                    <p class="direction-description">С помощью фильтрации и поиска легко подобрать проект по нужным критериям, например, по языку программирования или направлению разработки и платформе.</p>
+                    <a class="arrow-button" href="./search.html">Перейти к поиску <i class="fas fa-arrow-right arrow-button-icon"></i></a>
+                </div>
+            </div>
+            <div class="section sectionRight">
+                <div class="sectionContent">
+                    <div class="languages-container">
+                        <div class="language-item">
+                            <div class="language-content" data-aos="fade-up" data-aos-duration="500">
+                                <img src="assets/img/language-python.png" class="section-image">
+                                <p class="language-title">Python</p>
+                            </div>
+                        </div>
+                        <div class="language-item">
+                            <div class="language-content" data-aos="fade-up" data-aos-duration="900">
+                                <img src="assets/img/language-swift.png" class="section-image">
+                                <p class="language-title">Swift</p>
+                            </div>
+                        </div>
+                        <div class="language-item">
+                            <div class="language-content" data-aos="fade-up" data-aos-duration="1300">
+                                <img src="assets/img/language-js.png" class="section-image">
+                                <p class="language-title">JavaScript</p>
+                            </div>
+                        </div>
+                        <div class="language-item">
+                            <div class="language-content" data-aos="fade-up" data-aos-duration="1700">
+                                <img src="assets/img/language-go.png" class="section-image">
+                                <p class="language-title">GoLang</p>
+                            </div>
+                        </div>
+                        <div class="language-item">
+                            <div class="language-content" data-aos="fade-up" data-aos-duration="2100">
+                                <img src="assets/img/language-ruby.png" class="section-image">
+                                <p class="language-title">Ruby</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="container-5">
+            <div class="section">
+                <div class="sectionContent">
+                    <p class="author-title">DESIGNED & DEVELOPED BY @SAIZAAX FOR RTU MIREA / ALL RIGHTS RESERVED 2020</p>
+                    <a class="author-link" href="https://github.com/xaazias/mirea.web.ide/">PROJECT GITHUB REPOSITORY</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./src/rellax.min.js"></script>
+    <script src="./src/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск</title>
+    <link rel="shortcut icon" href="assets/ico/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/common.css"/>
+    <link rel="stylesheet" href="assets/search.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+<body>
+    <p class="search-upper-title" data-aos="fade-down" data-aos-duration="900">Поиск по каталогу инструментов</p>
+    <div class="container" id="container-1" data-aos="fade-down" data-aos-duration="900">
+        <div class="search-input-container">
+            <input type="text" class="search-input-bar" id="search-input" placeholder="Поиск">
+            <i class="fas fa-search search-icon"></i>
+        </div>
+        <div class="section" id="search-tags-container">
+            <div class="sectionContent" id="tags-container"></div>
+        </div>
+    </div>
+    <div class="container" id="container-2">
+        <div data-aos="fade-right" data-aos-duration="900">
+            <p class="section-bar-title">Фильтр</p>
+            <div class="section" id="filter-bar-container">
+                <div class="sectionContent">
+                    <p class="filter-bar-title">Язык</p>
+                    <div class="items-container" id="language-container">
+                        <div class="select-item">C/C++</div>
+                        <div class="select-item">C#</div>
+                        <div class="select-item">Go</div>
+                        <div class="select-item">HTML/CSS</div>
+                        <div class="select-item">Java</div>
+                        <div class="select-item">JavaScript</div>
+                        <div class="select-item">Kotlin</div>
+                        <div class="select-item">Objective-C</div>
+                        <div class="select-item">PHP</div>
+                        <div class="select-item">Python</div>
+                        <div class="select-item">Ruby</div>
+                        <div class="select-item">Rust</div>
+                        <div class="select-item">SQL</div>
+                        <div class="select-item">Swift</div>
+                    </div>
+                    <p class="filter-bar-title">Направление</p>
+                    <div class="items-container" id="direction-container">
+                        <div class="select-item">Data Science</div>
+                        <div class="select-item">Desktop</div>
+                        <div class="select-item">GameDev</div>
+                        <div class="select-item">Mobile</div>
+                        <div class="select-item">Web</div>
+                    </div>
+                    <p class="filter-bar-title">Платформа</p>
+                    <div class="items-container" id="platform-container">
+                        <div class="select-item">Linux</div>
+                        <div class="select-item">MacOS</div>
+                        <div class="select-item">Windows</div>
+                    </div>
+                </div>
+            </div>
+            <div class="go-back-container">
+                <a class="go-back-link" href="./index.html"><i class="fas fa-arrow-left go-back-icon"></i>Назад</a>
+            </div>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="900">
+            <p class="section-bar-title">Приложения</p>
+            <div class="section" id="apps-bar-container">
+                <div class="sectionContent">
+                    <div class="apps-container">
+                        <div class="apps-item" data-title="Atom" data-dev="Facebook" data-tags="C/C++ C# Go HTML/CSS Java JavaScript Kotlin PHP Python Ruby Rust SQL Desktop Data_Science GameDev Mobile Web Windows MacOS Linux">
+                            <div class="logo-title-container">
+                                <img class="app-icon" src="assets/img/icons/atom.png">
+                                <div class="app-title-container">
+                                    <p class="app-title">Atom</p>
+                                    <p class="app-dev">FACEBOOK</p>
+                                </div>
+                            </div>
+                            <p class="app-description">Atom - бесплатный текстовый редактор с открытым исходным кодом для Linux, macOS, Windows с поддержкой плагинов, написанных на Node.js, и встраиваемых под управлением Git. Большинство плагинов имеют статус свободного программного обеспечения, разрабатываются и поддерживаются сообществом.</p>
+                            <div class="app-link-container">
+                                <a class="app-link" href="./applications/atom.html">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="apps-item" data-title="AppCode" data-dev="JetBrains" data-tags="C/C++ JavaScript Objective-C Swift Mobile Desktop MacOS">
+                            <div class="logo-title-container">
+                                <img class="app-icon" src="assets/img/icons/jb_appcode.png">
+                                <div class="app-title-container">
+                                    <p class="app-title">AppCode</p>
+                                    <p class="app-dev">JETBRAINS</p>
+                                </div>
+                            </div>
+                            <p class="app-description">AppCode - интегрированная среда разработки для разработки на Swift, Objective-C, C/C ++ и JavaScript, созданная на платформе JetBrains IntelliJ IDEA.</p>
+                            <div class="app-link-container">
+                                <a class="app-link" href="./applications/appcode.html">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="apps-item" data-title="CLion" data-dev="JetBrains" data-tags="C/C++ Mobile Desktop GameDev Windows MacOS Linux">
+                            <div class="logo-title-container">
+                                <img class="app-icon" src="assets/img/icons/jb_clion.png">
+                                <div class="app-title-container">
+                                    <p class="app-title">CLion</p>
+                                    <p class="app-dev">JETBRAINS</p>
+                                </div>
+                            </div>
+                            <p class="app-description">CLion — интегрированная среда разработки для языков программирования C и C++, разрабатываемая компанией JetBrains. Подходит для операционных систем Windows, macOS, и Linux.</p>
+                            <div class="app-link-container">
+                                <a class="app-link" href="./applications/clion.html">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="apps-item" data-title="DataGrip" data-dev="JetBrains" data-tags="SQL Web Windows MacOS Linux">
+                            <div class="logo-title-container">
+                                <img class="app-icon" src="assets/img/icons/jb_datagrip.png">
+                                <div class="app-title-container">
+                                    <p class="app-title">DataGrip</p>
+                                    <p class="app-dev">JETBRAINS</p>
+                                </div>
+                            </div>
+                            <p class="app-description">DataGrip — интегрированная среда разработки для профессиональной работы с SQL и NoSQL базами данных, разрабатываемая компанией JetBrains. Подходит для операционных систем Windows, macOS, и Linux.</p>
+                            <div class="app-link-container">
+                                <a class="app-link" href="./applications/datagrip.html">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="apps-item" data-title="GoLand" data-dev="JetBrains" data-tags="Go Data_Science Windows MacOS Linux">
+                            <div class="logo-title-container">
+                                <img class="app-icon" src="assets/img/icons/jb_goland.png">
+                                <div class="app-title-container">
+                                    <p class="app-title">GoLand</p>
+                                    <p class="app-dev">JETBRAINS</p>
+                                </div>
+                            </div>
+                            <p class="app-description">GoLand — интегрированная среда разработки для профессиональной работы с языком программирования Go, разрабатываемая компанией JetBrains. Подходит для операционных систем Windows, macOS, и Linux.</p>
+                            <div class="app-link-container">
+                                <a class="app-link" href="./applications/goland.html">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="apps-item" data-title="Intellij IDEA" data-dev="JetBrains" data-tags="Java Kotlin Data_Science Desktop Mobile Web Windows MacOS Linux">
+                            <div class="logo-title-container">
+                                <img class="app-icon" src="assets/img/icons/jb_IntelliJ IDEA.png">
+                                <div class="app-title-container">
+                                    <p class="app-title">IntelliJ IDEA</p>
+                                    <p class="app-dev">JETBRAINS</p>
+                                </div>
+                            </div>
+                            <p class="app-description">IntelliJ IDEA — интегрированная среда разработки для профессиональной работы с языками программирования Java и Kotlin, разрабатываемая компанией JetBrains. Подходит для операционных систем Windows, macOS, и Linux.</p>
+                            <div class="app-link-container">
+                                <a class="app-link" href="./applications/idea.html">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="apps-item" data-title="PhpStorm" data-dev="JetBrains" data-tags="PHP Web Windows MacOS Linux">
+                            <div class="logo-title-container">
+                                <img class="app-icon" src="assets/img/icons/jb_phpstorm.png">
+                                <div class="app-title-container">
+                                    <p class="app-title">PhpStorm</p>
+                                    <p class="app-dev">JETBRAINS</p>
+                                </div>
+                            </div>
+                            <p class="app-description">PhpStorm — интегрированная среда разработки для профессиональной работы с языком программирования PHP, разрабатываемая компанией JetBrains. Подходит для операционных систем Windows, macOS, и Linux.</p>
+                            <div class="app-link-container">
+                                <a class="app-link" href="./applications/phpstorm.html">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="apps-item" data-title="PyCharm" data-dev="JetBrains" data-tags="Python Desktop Data_Science Web Windows MacOS Linux">
+                            <div class="logo-title-container">
+                                <img class="app-icon" src="assets/img/icons/jb_pycharm.png">
+                                <div class="app-title-container">
+                                    <p class="app-title">PyCharm</p>
+                                    <p class="app-dev">JETBRAINS</p>
+                                </div>
+                            </div>
+                            <p class="app-description">PyCharm — интегрированная среда разработки для профессиональной работы с языком программирования Python, разрабатываемая компанией JetBrains. Подходит для операционных систем Windows, macOS, и Linux.</p>
+                            <div class="app-link-container">
+                                <a class="app-link" href="./applications/pycharm.html">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="apps-item" data-title="Rider" data-dev="JetBrains" data-tags="C# Desktop Mobile GameDev Windows MacOS Linux">
+                            <div class="logo-title-container">
+                                <img class="app-icon" src="assets/img/icons/jb_rider.png">
+                                <div class="app-title-container">
+                                    <p class="app-title">Rider</p>
+                                    <p class="app-dev">JETBRAINS</p>
+                                </div>
+                            </div>
+                            <p class="app-description">Rider — интегрированная среда разработки для профессиональной работы с приложениями на платформе .NET, разрабатываемая компанией JetBrains. Подходит для операционных систем Windows, macOS, и Linux.</p>
+                            <div class="app-link-container">
+                                <a class="app-link" href="./applications/rider.html">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="apps-item" data-title="RubyMine" data-dev="JetBrains" data-tags="Ruby Desktop Data_Science Windows MacOS Linux">
+                            <div class="logo-title-container">
+                                <img class="app-icon" src="assets/img/icons/jb_rubymine.png">
+                                <div class="app-title-container">
+                                    <p class="app-title">RubyMine</p>
+                                    <p class="app-dev">JETBRAINS</p>
+                                </div>
+                            </div>
+                            <p class="app-description">RubyMine — интегрированная среда разработки для профессиональной работы с языком программирования Ruby, разрабатываемая компанией JetBrains. Подходит для операционных систем Windows, macOS, и Linux.</p>
+                            <div class="app-link-container">
+                                <a class="app-link" href="./applications/rubymine.html">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="apps-item" data-title="Sublime Text" data-dev="Sublime HQ" data-tags="C/C++ C# Go HTML/CSS Java JavaScript Kotlin PHP Python Ruby Rust SQL Desktop Data_Science GameDev Mobile Web Windows MacOS Linux">
+                            <div class="logo-title-container">
+                                <img class="app-icon" src="assets/img/icons/sublime_text.png">
+                                <div class="app-title-container">
+                                    <p class="app-title">Sublime Text</p>
+                                    <p class="app-dev">SUBLIME HQ</p>
+                                </div>
+                            </div>
+                            <p class="app-description">Sublime Text — «лёгкий» редактор исходного кода, разработанный компанией Sublime HQ для Windows, Linux и macOS. Редактор оснащён менеджером пакетов, который позволяет пользователю находить, устанавливать, обновлять и удалять пакеты без перезагрузки программы. Менеджер поддерживает установленные пакеты в актуальном состоянии, загружая новые версии из репозиториев. Кроме того, он предоставляет команды для активации и деактивации установленных пакетов.</p>
+                            <div class="app-link-container">
+                                <a class="app-link" href="./applications/sublimetext.html">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="apps-item" data-title="Visual Studio" data-dev="Microsoft" data-tags="C/C++ C# Go HTML/CSS Java JavaScript Kotlin PHP Python Ruby Rust SQL Desktop Data_Science GameDev Mobile Web Windows MacOS Linux">
+                            <div class="logo-title-container">
+                                <img class="app-icon" src="assets/img/icons/vs.png">
+                                <div class="app-title-container">
+                                    <p class="app-title">Visual Studio</p>
+                                    <p class="app-dev">MICROSOFT</p>
+                                </div>
+                            </div>
+                            <p class="app-description">Visual Studio — редактор исходного кода с поддержкой технологии IntelliSense и возможностью простейшего рефакторинга кода, разработанный компанией Microsoft для платформ Windows, macOS, Linux. Встроенный отладчик может работать как отладчик уровня исходного кода, так и отладчик машинного уровня. Остальные встраиваемые инструменты включают в себя редактор форм для упрощения создания графического интерфейса приложения, веб-редактор, дизайнер классов и дизайнер схемы базы данных. Visual Studio позволяет создавать и подключать сторонние плагины для расширения функциональности.</p>
+                            <div class="app-link-container">
+                                <a class="app-link" href="./applications/vs.html">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="apps-item" data-title="Visual Studio Code" data-dev="Microsoft" data-tags="C/C++ C# Go HTML/CSS Java JavaScript Kotlin PHP Python Ruby Rust SQL Desktop Data_Science GameDev Mobile Web Windows MacOS Linux">
+                            <div class="logo-title-container">
+                                <img class="app-icon" src="assets/img/icons/vs_code.png">
+                                <div class="app-title-container">
+                                    <p class="app-title">Visual Studio Code</p>
+                                    <p class="app-dev">MICROSOFT</p>
+                                </div>
+                            </div>
+                            <p class="app-description">Visual Studio Code — редактор исходного кода, разработанный Microsoft для Windows, Linux и macOS. Позиционируется как «лёгкий» редактор кода для кроссплатформенной разработки веб и облачных приложений. Включает в себя отладчик, инструменты для работы с Git, подсветку синтаксиса, IntelliSense и средства для рефакторинга. Имеет широкие возможности для кастомизации: пользовательские темы, сочетания клавиш и файлы конфигурации.</p>
+                            <div class="app-link-container">
+                                <a class="app-link" href="./applications/vscode.html">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="apps-item" data-title="WebStorm" data-dev="JetBrains" data-tags="HTML/CSS JavaScript PHP Web Windows MacOS Linux">
+                            <div class="logo-title-container">
+                                <img class="app-icon" src="assets/img/icons/jb_webstorm.png">
+                                <div class="app-title-container">
+                                    <p class="app-title">WebStorm</p>
+                                    <p class="app-dev">JETBRAINS</p>
+                                </div>
+                            </div>
+                            <p class="app-description">WebStorm — интегрированная среда разработки для профессиональной работы с HTML & CSS и JavaScript, разрабатываемая компанией JetBrains. Подходит для операционных систем Windows, macOS, и Linux.</p>
+                            <div class="app-link-container">
+                                <a class="app-link" href="./applications/webstorm.html">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="apps-item" data-title="Xcode" data-dev="Apple" data-tags="C/C++ Java Objective-C Python Ruby Swift Web Desktop Data_Science Mobile GameDev MacOS">
+                            <div class="logo-title-container">
+                                <img class="app-icon" src="assets/img/icons/xcode.png">
+                                <div class="app-title-container">
+                                    <p class="app-title">Xcode</p>
+                                    <p class="app-dev">APPLE</p>
+                                </div>
+                            </div>
+                            <p class="app-description">Xcode — интегрированная среда разработки программного обеспечения для платформ macOS, iOS, watchOS и tvOS, разработанная корпорацией Apple. Первая версия выпущена в 2003 году. Стабильные версии распространяются бесплатно через App Store. Зарегистрированные разработчики также имеют доступ к бета-сборкам через сайт Apple Developer.</p>
+                            <div class="app-link-container">
+                                <a class="app-link" href="./applications/xcode.html">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="apps-item" id="nothing" data-title="None" data-dev="None" data-tags="None">
+                            <div class="nothing-found-container">
+                                <div class="nothing-found">
+                                    <p class="nothing-found-title">:(</p>
+                                    <p class="nothing-found-subtitle">Ничего не найдено, попробуйте изменить поисковый запрос или фильтры.</p>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./src/search.js"></script>
+</body>
+</html>
